@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=currency_rupee" />
+    <title>Shop-Second Fabric</title>
+    <style>
+
+
+
+                            /* SHOP PAGE.CSS */
+
+
+
+
+#shop-header{
+    background: url("productbannner2.png") ,linear-gradient(to right, black, transparent 30%, transparent 70%, black);
+    background-size: cover;
+    background-position: center;
+    height: 36vh;
+    width: 100%;
+    background-blend-mode: darken;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+#shop-header h2{
+    color: rgb(207, 167, 35);
+    text-shadow: 1px 2px 4px black ;
+}
+#shop-header p{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+#pagination{
+    text-align: center;
+
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+                                /* SHOP  DETAILS PAGE.CSS */
+
+
+
+
+#prodetails {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    margin-top: 20px;
+}
+
+
+#prodetails .single-pro-image{
+    width: 35%;
+    margin-right: 20px;
+    
+}  
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.small-img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+#prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 35px;
+}
+#prodetails .single-pro-details h4{
+    padding: 40px 0 15px 0;
+
+}
+#prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input{
+    width: 40px;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+#prodetails .single-pro-details button{
+    background-color: #088178;
+    color: #fff;
+    font-weight: 500;
+}
+#prodetails .single-pro-details span{
+    line-height: 25px;
+    font-family: "Hubot Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 14px;
+}
+
+                                /* SHOP CART PAGE.CSS */
+
+
+
+#cartban{
+    margin-top: 180px;
+    margin-bottom: 25px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}                           
+#cartban h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+#cartban a{
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+}
+#cartban a:hover{
+    text-decoration-color:#088178;
+}
+
+.tablestyle thead{
+    width: 100%;
+}
+.quantity input[type="number"]{
+    border: none;
+    outline: none;
+    font-size: 30px;
+    text-align: center; /* Center the number */
+    width: 130px;
+    margin: 0;
+}
+input[type="number"]:focus {
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+div.quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.prodplus{
+    font-size: 30px;
+    
+ }
+ .prodplus:hover{
+    color: #088178;
+ }
+.prodminus{
+    font-size: 40px;
+ }
+ .prodminus:hover{
+    color: rgb(230, 56, 56);
+ }
+
+#cart {
+    width: 100%;
+    overflow-x: auto;  
+}
+
+.tablestyle {
+    width: 100%;
+    border-collapse: collapse;
+}
+.tablestyle thead th{
+    text-align: start;
+    font-size: 15px;
+    font-weight: 500;
+}
+.tablestyle th, 
+.tablestyle td {
+    padding: 10px;
+    
+}
+
+.cart-item-media img {
+    width: 100px; 
+    height: auto;
+    max-width: 120px;
+    display: block;
+    margin: auto;
+}
+
+.cart-item-detail {
+    min-width: 200px;
+    text-align: left;
+}
+.cart-item-detail a{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+.cart-item-detail a:hover{
+    text-decoration: underline;
+    text-decoration-color: #088178;
+}
+.cart-item-detail a h4{
+    color: black;
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+.product-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 0px;
+}
+
+.product-option dt {
+    font-weight: bold;
+}
+
+
+
+.remove-item {
+    color:black;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.remove-item:hover {
+    color: rgb(230, 56, 56);
+}
+
+svg {
+  display: none;
+  width: 20px;
+  height: 20px;
+  animation: rotate 1.5s linear infinite;
+}
+
+circle {
+  fill: none;
+  stroke: #088178;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 126;
+  stroke-dashoffset: 126;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 126;
+  }
+  50% {
+    stroke-dashoffset: 63;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+#bottombanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 0px;
+    background-color: transparent;
+    
+}
+#bottombanner h3{
+    padding: 5px 160px;
+    border-radius: 4px;
+    border: 2px solid #088178;
+    font-family: "League Spartan", serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+#bottombanner h3:hover{
+    background-color: #088178;
+    box-shadow: 2px 3px 5px black;
+
+}
+#checkout-overlay {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#checkout-overlay img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#checkout-overlay button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  background-color: #088178;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#checkout-overlay button:hover {
+  background-color: #066b63;
+}
+
+    </style>
+    <link rel="stylesheet" href="Second Fabric.css">
+</head>
+<body>
+    
+    <section id="header">
+        <a href="Second Fabric.html"><img src="SE2logo.png" alt="Second Fabric logo" class="logo"></a>
+    
+    <div>
+        <ul id="navbar">
+            <li><a href="Second Fabric.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about us.html">About</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </div>
+    <li><a href="cart.html"><i class="bi bi-bag"></i></a></li>
+  <div id="mobile-menu-icon">
+    <i class="bi bi-list" id="menu-icon"></i>
+  </div>
+    </section>
+
+    <section id="cartban">
+        <h2>Your Cart</h2>
+        <a href="Shop.html">Continue shopping</a>
+    </section>
+
+     <section id="cart">
+        <table id="cart-table" class="tablestyle">
+            <thead>
+                <tr>
+                    <th colspan="2">PRODUCT</th>
+                    <th>QUANTITY</th>
+                    <th>TOTAL</th>
+                    <th>REMOVE</th>
+                </tr>
+            </thead>
+            <tbody id="cart-body">
+                <tr>
+                    <td class="cart-item-media">
+                        <img src="" alt="" id="cart-item-image">
+                    </td>
+                    <td class="cart-item-detail">
+                        <a href="" id="cart-item-link">
+                            <h4 id="cart-item-name"></h4>
+                        </a>
+                        <dl>
+                            <div class="product-option">
+                                <dt>Price:</dt>
+                                <dd id="cart-item-price"></dd>
+                            </div>
+                            <div class="product-option">
+                                <dt>Size:</dt>
+                                <dd id="cart-item-size"></dd>
+                            </div>
+                        </dl>
+                    </td>    
+                    <td class="cart-item-quantity">
+                        <div class="quantity">
+                            <div class="prodminus" id="qminus">-</div>
+                            <input type="number" class="numinput" value="1" min="1" data-index="${index}">
+                            <div class="prodplus" id="qplus">+</div>
+                        </div>
+                    </td>
+                    <td class="cart-item-total" id="cart-item-total">
+                        <!-- <svg id="price-spinner" viewBox="0 0 50 50" style="display: none;">
+                            <circle cx="25" cy="25" r="20"></circle>
+                        </svg> -->
+                    </td>
+                    <td>
+                        <button class="remove-item" id="remove-item">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section id="bottombanner">
+
+            <h3 class="check-btn">Check Out</h3>
+        </section>
+
+ 
+</section>
+<div id="checkout-overlay">
+  <img src="checkoutimg.png" alt="Checkout Image" />
+  <button onclick="location.href='Second%20Fabric.html'">Go to Home</button>
+</div>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up for Newsletter</h4>
+            <p>Get E-mail updates about our latestshop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer >
+        <div class="mainfot">
+            <div class="fotimg">
+                <img src="SE2logo.png" alt="">
+            </div>
+            <div class="col">
+                <h4>Second Fabric</h4>
+                <p><strong>Address:</strong> Humayun Town,Jaranwala Road,Faisalabad</p>
+                <p><strong>Phone:</strong> +923349286205</p>
+                <p><strong>Hours:</strong> 08:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                </div>
+            </div> 
+                
+            <div class="col install">
+                <h4>Install App:</h4>
+                <p>From Store Or Google Play</p>
+                <div class="row">
+                    <img src="googleplay.png" alt="">
+                    <img src="appstoregoogle.png" alt="">
+                </div>            
+            </div>
+
+        </div>
+        
+        <div class="copyright">
+            © 2025 Second Fabric Pakistan,All Right Reserved.
+        </div>
+    </footer>
+      
+
+     <script>
+
+
+  let prevScrollPos = window.pageYOffset;
+const header = document.getElementById("header");
+
+// Mobile pe bhi smooth kaam karega
+window.addEventListener("scroll", function () {
+  const currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos || currentScrollPos < 50) {
+    // Scroll up or near top
+    header.style.top = "0";
+  } else {
+    // Scroll down
+    header.style.top = "-100px";
+  }
+
+  prevScrollPos = currentScrollPos;
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileMenuIcon = document.getElementById("mobile-menu-icon");
+  const navbar = document.getElementById("navbar");
+  const menuIcon = document.getElementById("menu-icon");
+
+  mobileMenuIcon.addEventListener("click", function () {
+    navbar.classList.toggle("active");
+
+    if (navbar.classList.contains("active")) {
+      menuIcon.classList.remove("bi-list");
+      menuIcon.classList.add("bi-x");
+      // Disable scroll
+      document.body.style.overflow = "hidden";
+    } else {
+      menuIcon.classList.remove("bi-x");
+      menuIcon.classList.add("bi-list");
+      // Enable scroll
+      document.body.style.overflow = "auto";
+    }
+  });
+});
+
+
+const checkBtn = document.querySelector(".check-btn");
+const overlay = document.getElementById("checkout-overlay");
+
+// Store sections to hide in variables
+const cartban = document.getElementById("cartban");
+const cart = document.getElementById("cart");
+const newsletter = document.getElementById("newsletter");
+const footer = document.querySelector("footer");
+
+// On click hide all above and show overlay
+checkBtn.addEventListener("click", function () {
+  header.style.display = "none";
+  cartban.style.display = "none";
+  cart.style.display = "none";
+  newsletter.style.display = "none";
+  footer.style.display = "none";
+
+  overlay.style.display = "flex";
+});
+
+document.addEventListener("DOMContentLoaded", function (){
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartBody = document.getElementById("cart-body");
+    
+    
+    function checkValue(qsub, qvalue) {
+        let value = parseInt(qvalue.value);
+        if (value <= 1) {
+            qsub.style.opacity = "0.3";
+            qsub.style.cursor = "not-allowed";
+        } else {
+            qsub.style.opacity = "1";
+            qsub.style.cursor = "pointer";
+        }
+    }
+
+
+    function displayCart() {
+        cartBody.innerHTML = "";
+        cart.forEach((item, index) => {
+            let row = document.createElement("tr");
+            row.innerHTML = `
+                <td class="cart-item-media">
+                    <img src="${item.image}" alt="${item.name}">
+                </td>
+                <td class="cart-item-detail">
+                    <a href="sproduct.html?id=${item.id}"><h4>${item.name}</h4></a>
+                    <dl>
+                        <div class="product-option">
+                            <dt>Price:</dt>
+                            <dd>${item.price}</dd>
+                        </div>
+                        <div class="product-option">
+                            <dt>Size:</dt>
+                            <dd>${item.size}</dd>
+                        </div>
+                    </dl>
+                </td>    
+                <td class="cart-item-quantity">
+                    <div class="quantity">
+                        <div class="prodminus" data-index="${index}">-</div>
+                        <input type="number" class="numinput" value="${item.quantity}" min="1" data-index="${index}">
+                        <div class="prodplus" data-index="${index}">+</div>
+                    </div>
+                </td>
+                <td class="cart-item-total">$${(parseFloat(item.price.replace("$", "")) * item.quantity).toFixed(2)}</td>
+                <td>
+                    <button class="remove-item" data-index="${index}"><i class="bi bi-trash"></i></button>
+                </td>
+            `;
+            cartBody.appendChild(row);
+            checkValue(document.querySelector(`.prodminus[data-index='${index}']`), document.querySelector(`.numinput[data-index='${index}']`));
+        });
+        addEventListeners();
+    }
+
+    function addEventListeners() {
+        document.querySelectorAll(".prodminus").forEach(button => {
+            button.addEventListener("click", function () {
+                let index = this.getAttribute("data-index");
+                if (cart[index].quantity > 1) {
+                    cart[index].quantity--;
+                    updateCart();
+                }
+                checkValue(this, document.querySelector(`.numinput[data-index='${index}']`));
+            });
+        });
+
+        document.querySelectorAll(".prodplus").forEach(button => {
+            button.style.cursor = "pointer";
+            button.addEventListener("click", function () {
+                let index = this.getAttribute("data-index");
+                cart[index].quantity++;
+                updateCart();
+                checkValue(document.querySelector(`.prodminus[data-index='${index}']`), document.querySelector(`.numinput[data-index='${index}']`));
+            });
+        });
+
+        document.querySelectorAll(".numinput").forEach(input => {
+            input.addEventListener("change", function () {
+                let index = this.getAttribute("data-index");
+                let newQuantity = parseInt(this.value);
+                if (newQuantity < 1 || isNaN(newQuantity)) newQuantity = 1;
+                cart[index].quantity = newQuantity;
+                updateCart();
+                checkValue(document.querySelector(`.prodminus[data-index='${index}']`), this);
+            });
+        });
+
+        document.querySelectorAll(".remove-item").forEach(button => {
+            button.addEventListener("click", function () {
+                let index = this.getAttribute("data-index");
+                cart.splice(index, 1);
+                updateCart();
+            });
+        });
+    }
+
+
+    
+    if (isCartEmpty()) {
+        document.getElementById("cart").style.display = "none";
+        let upcartban = document.getElementById("cartban");
+        upcartban.style.display = "flex";
+        upcartban.style.flexDirection = "column";
+        let childf = upcartban.firstElementChild;
+        childf.textContent = "Your cart is Empty";
+        let childl = upcartban.lastElementChild;
+        childl.style.backgroundColor = "black";
+        childl.style.color = "white";
+        childl.style.textDecoration = "none";
+        childl.style.padding = "4px 10px";
+    } else {
+        document.getElementById("cart").style.display = "block";
+        document.getElementById("cartban").style.display = "flex";
+        displayCart();
+    }
+
+
+    function isCartEmpty() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    return cart.length === 0;
+    }
+
+    
+    function updateCart() {
+       localStorage.setItem("cart", JSON.stringify(cart));
+    displayCart();
+    if (isCartEmpty()) {
+        document.getElementById("cart").style.display = "none";
+        let upcartban = document.getElementById("cartban");
+        upcartban.style.display = "flex";
+        upcartban.style.flexDirection = "column";
+        let childf = upcartban.firstElementChild;
+        let childl = upcartban.lastElementChild;
+        childf.textContent = "Your cart is Empty";
+        childl.style.backgroundColor = "black";
+        childl.style.color="white";
+        child.style.textDecoration = "none";
+        childl.style.padding = "7px 16px";
+
+    } else {
+        document.getElementById("cart").style.display = "block";
+        document.getElementById("cartban").style.display = "flex";
+    }
+  
+  
+    }
+
+
+    displayCart();
+    
+
+
+});
+
+
+     </script>
+    
+</body>
+</html>

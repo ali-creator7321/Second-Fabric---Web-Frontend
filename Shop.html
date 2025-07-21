@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=currency_rupee" />
+    <!-- <link rel="stylesheet" href="Second Fabric.css"> -->
+    <title>Shop-Second Fabric</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;   
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;   
+}
+h4{
+    font-size: 20px;
+    color: #222;   
+}
+h6{
+    font-size: 12px;
+    font-weight: 700;   
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 18px;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: 0.2s;
+}
+body{
+    width: 100%;
+}
+
+#header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    box-shadow: 0px 5px 15px #0b292752;
+    background-color: white;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+#header img{
+    height: 70px;
+    width: 70px;
+}
+#header div{
+    height: 80px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar{
+    height: 80px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+#navbar li{
+    list-style:none;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:#088178;
+    cursor: pointer;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 60%;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 2px;
+    background-color: #088178;
+
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+#product1 .pro-container2{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: none;
+}
+#product1 .pro-container3{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: none;
+}
+#product1 .pro-container4{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: none;
+}
+#product1 .pro-container5{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: none;
+}
+#product1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+}
+.head-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.head-header h2{
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+}
+.head-header .headline{
+    height: 4px;
+    width: 8%;
+    background-color: #088178;
+    border-radius: 6px;
+}
+
+#product1 .pro{
+    width: 15%;
+    min-width: 220px;
+    padding: 10px 12px ;
+    border: 1px solid #27272715 ;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    margin: 15px 0;
+    position: relative;
+    transition: 0.3s ease;
+    background-color: #afafaf91;
+    overflow: hidden;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.3s linear;
+}
+#product1 .pro img:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+#product1 .pro .des{
+    text-align:start;
+    padding: 10px 0;
+}
+#product1 .pro  .des span{
+    color: #606063;
+    font-size: 13px;
+}
+#product1 .pro  .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 400;
+}
+#product1 .pro  .des i{
+    padding-top: 7px;
+    color: rgb(230, 172, 28);
+    font-size: 13px;
+}
+#product1 .pro  .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart{
+    width: 38px;
+    height: 38px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color:#b9d4be;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#product1 .pro .cart:hover{
+    background-color:#c0d6c4;
+    transform: scale(1.04);
+}
+
+
+                            /* SHOP PAGE.CSS */
+
+
+
+
+#shop-header{
+    background: url("productbannner2.png") ,linear-gradient(to right, black, transparent 30%, transparent 70%, black);
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    width: 100%;
+    background-blend-mode: darken;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding-bottom: 45px;
+}
+
+#shop-header h2{
+    color: rgb(207, 167, 35);
+    text-shadow: 1px 2px 4px black ;
+}
+#shop-header p{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+#pagination{
+    text-align: center;
+
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+div.relproducts{
+    display: none;
+}
+div.showmore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+}
+.showmore button{
+    padding: 10px 16px;
+    font-size: 17px;
+    border: none;
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+.showmore button:hover{
+    border: none;
+    background-color: #088178;
+    color: white;
+}
+
+#hoodies{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+#sweatshirts{
+    display: flex;
+    flex-direction: column;
+}
+
+div.menubox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    z-index: 50;
+    top: 80px;
+}
+.menubox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 20px 2px;    
+}
+.menubox a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.menubox a.active {
+  color: #088178;
+  font-weight: bold;
+}
+.menubox a:hover{
+  color: #088178; 
+  cursor: pointer;
+}
+.des a{
+    text-decoration: none;
+    color: black;
+}
+.des a:hover{
+    text-decoration: underline;
+    text-decoration-color:#088178 ;
+}
+
+
+
+
+    </style>
+     <link rel="stylesheet" href="Second Fabric.css">
+
+</head>
+<body>
+    
+<section id="header">
+        <a href="Second Fabric.html"><img src="SE2logo.png" alt="Second Fabric logo" class="logo"></a>
+    
+    <div>
+        <ul id="navbar">
+            <li><a  href="Second Fabric.html">Home</a></li>
+            <li><a class="active" href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about us.html">About</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </div>
+    <li><a href="cart.html"><i class="bi bi-bag"></i></a></li>
+  <div id="mobile-menu-icon">
+    <i class="bi bi-list" id="menu-icon"></i>
+  </div>
+    </section>
+    
+    <section id="shop-header">
+        
+            <h2>#ShopNow</h2>
+            <p>Save more with coupons & up to 70% off!</p>
+    </section>
+<div class="menubox">
+  <a href="#hoodies" >Hoodies</a>
+  <a href="#graphictees" >Graphic Tees</a>
+  <a href="#sweatshirts" >Sweat Shirts</a>
+  <a href="#kurtas" >Kurtas</a>
+</div>
+
+    <section id="hoodies">
+        <section id="product1"> 
+            <div class="head-header">  
+            <h2>HOODIES</h2>
+            <div class="headline"></div>
+            </div>
+            <div class="pro-container">
+                <div class="pro" >
+                    <a href="sproduct.html?id=ch1">
+                        <img src="https://thepixelfashion.com/cdn/shop/files/hoodie_front_-_2024-12-22T174058.255_f5de1dd4-c68e-4ea3-ae1b-de588d9e2155.png?v=1735892017&width=360"  alt="">
+                    </a>
+                    <div class="des">
+                        <span>Car Hoodies</span>
+                        <a href="sproduct.html?id=ch1"> <h5>Bmw black hoodie</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href="#" class="add-to-cart" data-id="ch1"><i class="bi bi-cart3 cart"></i></a>
+                </div>    
+                <div class="pro" >
+                    <a href="sproduct.html?id=ch2">
+                           <img src="https://thepixelfashion.com/cdn/shop/files/navyhoodiefront_42.png?v=1734873821&width=360" alt=""> 
+                        </a>
+                    <div class="des">
+                        <span>Car Hoodies</span>
+                        <a href="sproduct.html?id=ch2"> <h5>V12 blue hoodie</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=sh1">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/hoodie_front_-_2024-12-15T115905.553.png?v=1734246069&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Sport Hoodies</span>
+                        <a href="sproduct.html?id=sh1"><h5>B56 black hoodie</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=sh2">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/navy_hoodie_front_49.png?v=1736605834&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Sport Hoodies</span>
+                        <a href="sproduct.html?id=sh2">  <h5>V18 blue hoodie</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>   
+                <div class="pro">
+                    <a href="sproduct.html?id=hh1">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/hoodiefront_100.png?v=1728656052&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Hero Hoodies</span>
+                        <a href="sproduct.html?id=hh1">  <h5>Bat black hoodie</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$90</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=hh2">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/hoodiefront-2024-10-10T235931.261.png?v=1728656282&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Hero Hoodies</span>
+                        <a href="sproduct.html?id=hh2">  <h5>Flash black hoodie</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$90</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=sh3">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/hoodiefront_97.png?v=1732298342&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Sport Hoodies</span>
+                        <a href="sproduct.html?id=sh3">    <h5>Cr7 black hoodie</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=sh4">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/hoodiefront-2024-11-22T202258.955.png?v=1732289105&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Sport Hoodies</span>
+                        <a href="sproduct.html?id=sh4">  <h5>M10 black hoodie</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+            </div>
+    
+            <div class="pro-container2" >
+                <div class="pro" >
+                    <a href="sproduct.html?id=ch3">
+                        <img src="https://thepixelfashion.com/cdn/shop/files/hoodiefront-2024-11-16T122040.984.png?v=1731741977&width=360"  alt="">
+                    </a>
+                    <div class="des">
+                        <span>Car Hoodies</span>
+                        <a href="sproduct.html?id=ch3"> <h5>Amg black hoodie</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro" >
+                    <a href="sproduct.html?id=ch4">
+                           <img src="https://thepixelfashion.com/cdn/shop/files/hoodieback_69.png?v=1734879279&width=360" alt=""> 
+                        </a>
+                    <div class="des">
+                        <span>Car Hoodies</span>
+                        <a href="sproduct.html?id=ch4"><h5>Bugatti black hoodie</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                 <div class="pro">
+                    <a href="sproduct.html?id=sh5">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/navy_hoodie_front_47.png?v=1736255456&width=360" alt="">
+                    </a>    
+                    <div class="des">
+                        <span>Sport Hoodies</span>
+                        <a href="sproduct.html?id=sh5"> <h5>Pak blue hoodie</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=sh6">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/hoodiefront-2024-11-27T185409.957.png?v=1732716068&width=360" alt="">
+                    </a>    
+                    <div class="des">
+                        <span>Sport Hoodies</span>
+                        <a href="sproduct.html?id=sh6"> <h5>V18 black hoodie</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=hh3">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/hoodiefront-2024-10-11T000155.175.png?v=1728656418&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Hero Hoodies</span>
+                        <a href="sproduct.html?id=hh3">  <h5>Iron black hoodie</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$90</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=hh4">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/hoodiefront-2024-10-11T000608.694.png?v=1728656855&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Hero Hoodies</span>
+                        <a href="sproduct.html?id=hh4"> <h5>Spider black hoodie</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$90</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=sh7">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/hoodiefront-2024-11-10T153831.146.png?v=1731235262&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Sport Hoodies</span>
+                        <a href="sproduct.html?id=sh7"><h5>Alnasr black hoodie</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=sh8">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/hoodiefront-2024-11-10T150713.001.png?v=1731235327&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Sport Hoodies</span>
+                        <a href="sproduct.html?id=sh8"> <h5>Miami black hoodie</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=ch5">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/hoodieback_45.png?v=1732715433&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Car Hoodies</span>
+                        <a href="sproduct.html?id=ch5"> <h5>911 black hoodie</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=ch6">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/navyhoodieback_17.png?v=1734877244&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Car Hoodies</span>
+                        <a href="sproduct.html?id=ch6"> <h5>Mus blue hoodie</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=hh5">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/hoodiefront-2024-10-10T235621.257.png?v=1728656532&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Hero Hoodies</span>
+                        <a href="sproduct.html?id=hh5"> <h5>Spider black hoodie</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$90</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=hh6">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/hoodiefront-2024-10-10T235916.656.png?v=1728656175&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Hero Hoodies</span>
+                        <a href="sproduct.html?id=hh6"> <h5>Deadpool black hoodie</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$90</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+            </div>
+    
+    
+            <div class="showmore">
+                <button id="Showprod">Show More</button>
+            </div>
+    
+    
+        </section>
+    </section>
+    <section id="graphictees">
+        <section id="product1">
+            <div class="head-header">  
+                <h2>GRAPHIC TEES</h2>
+                <div class="headline"></div>
+            </div>
+            <div class="pro-container">
+                <div class="pro">
+                    <a href="sproduct.html?id=qs1">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/DriveCarHalfSleeveT-Shirt.png?v=1717066201&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Quote Shirt</span>
+                        <a href="sproduct.html?id=qs1">  <h5>Drive black shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=qs2">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/PushYourLimitHalfSleeveT-Shirt.jpg?v=1722624048&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Quote Shirt</span>
+                        <a href="sproduct.html?id=qs2">  <h5>Pyl black shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=qs3">
+                <img src="https://thepixelfashion.com/cdn/shop/files/KeepitSimpleHalfSleeveT-Shirt_png.png?v=1717414584&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Quote Shirt</span>
+                        <a href="sproduct.html?id=qs3"> <h5>Kit black shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=qs4">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/PushYourLimitHalfSleeveT-Shirt_png.png?v=1717416170&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Quote Shirt</span>
+                        <a href="sproduct.html?id=qs4"> <h5>Pyl white shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=hs1">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/Angular-2024-09-01T180627.810.png?v=1725196446&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Hero Shirt</span>
+                        <a href="sproduct.html?id=hs1"><h5>Flash black shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$70</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=hs2">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/Angular-2024-09-01T192812.510.png?v=1725201197&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Hero Shirt</span>
+                        <a href="sproduct.html?id=hs2"><h5>Thor blue shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$70</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=gs1">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/DeveloperHalfSleeveT-Shirt_04969473-29e1-4b86-bea2-b57a3cc4e666.png?v=1717066069&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Geek Shirt</span>
+                        <a href="sproduct.html?id=gs1"> <h5>Dev black shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$60</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=gs2">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/Angular-2024-08-24T175752.925.png?v=1724504461&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Geek Shirt</span>
+                        <a href="sproduct.html?id=gs2"><h5>Pro blue shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$60</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+            </div>
+            <div class="pro-container3">
+                <div class="pro">
+                    <a href="sproduct.html?id=qs5">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/HopeHalfSleeveT-Shirt_fd609103-fb64-414c-9e48-fe84186d64f9.png?v=1717068827&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Quote Shirt</span>
+                        <a href="sproduct.html?id=qs5"> <h5>Hope black shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=qs6">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/EatSleepRepeatHalfSleeveT-Shirt_png.png?v=1717413030&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Quote Shirt</span>
+                        <a href="sproduct.html?id=qs6"><h5>Esr black shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$80</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=hs3">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/Angular_89_500b4de3-add5-484d-b3b8-e97e3a2e7131.png?v=1725193258&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Hero Shirt</span>
+                        <a href="sproduct.html?id=hs3"> <h5>Bat black shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$70</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=hs4">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/Angular-2024-09-01T172720.328.png?v=1725194289&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Hero Shirt</span>
+                        <a href="sproduct.html?id=hs4">  <h5>Spider white shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$70</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=gs3">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/Angular-2024-08-24T140349.655.png?v=1724491139&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Geek Shirt</span>
+                        <a href="sproduct.html?id=gs3">  <h5>Dev black shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$60</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=hs5">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/Angular-2024-09-01T172519.284.png?v=1725194080&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Hero Shirt</span>
+                        <a href="sproduct.html?id=hs5"> <h5>Iron black shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$70</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=gs4">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/VSCodeHalfSleeveT-Shirt.jpg?v=1717335493&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Geek Shirt</span>
+                        <a href="sproduct.html?id=gs4">  <h5>Vscode white shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$60</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=gs5">
+                    <img src="https://thepixelfashion.com/cdn/shop/files/Angular-2024-09-02T184043.552.png?v=1725284664&width=360" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Geek Shirt</span>
+                        <a href="sproduct.html?id=gs5">  <h5>Ui/Ux blue shirt</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$60</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+            </div>
+            <div class="showmore">
+                <button id="Showprodtees">Show More</button>
+            </div>
+        </section>
+    </section>
+    <section id="sweatshirts">
+        <section id="product1">
+            <div class="head-header">  
+                <h2>SWEAT SHIRT</h2>
+                <div class="headline"></div>
+            </div>
+            <div class="pro-container">
+                <div class="pro">
+                    <a href="sproduct.html?id=ss1">
+                    <img src="https://uniworthdress.com/uploads/product/TSS2416.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Sweat Shirt</span>
+                        <a href="sproduct.html?id=ss1">  <h5>Wavy Mustard shirt</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=ss2">
+                    <img src="https://uniworthdress.com/uploads/product/TSS2403-1.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Sweat Shirt</span>
+                        <a href="sproduct.html?id=ss2">  <h5>Texture green shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=ss3">
+                <img src="https://uniworthdress.com/uploads/product/TSS2411.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Sweat Shirt</span>
+                        <a href="sproduct.html?id=ss3"> <h5>Texture grey shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=ss4">
+                    <img src="https://uniworthdress.com/uploads/product/TSS2405-2.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Sweat Shirt</span>
+                        <a href="sproduct.html?id=ss4">  <h5>Texture blue shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=pss1">
+                    <img src="https://uniworthdress.com/uploads/product/TSS2407.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Printed Sweat Shirt</span>
+                        <a href="sproduct.html?id=pss1">  <h5>Pattern black shirt</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=pss2">
+                    <img src="https://uniworthdress.com/uploads/product/275fb3ae12b22701d158b37fea7ea633.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Printed Sweat Shirt</span>
+                        <a href="sproduct.html?id=pss2"> <h5>Captian black shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=pss3">
+                    <img src="https://uniworthdress.com/uploads/product/eb4e3506de52d13c8912f8e5b7b0c8dd.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Printed Sweat Shirt</span>
+                        <a href="sproduct.html?id=pss3"> <h5>Texture navy shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=pss4">
+                    <img src="https://uniworthdress.com/uploads/product/TSS2404-1.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Printed Sweat Shirt</span>
+                        <a href="sproduct.html?id=pss4"> <h5>Captian rust shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+            </div>
+            <div class="pro-container4">
+                <div class="pro">
+                    <a href="sproduct.html?id=ss5">
+                    <img src="https://uniworthdress.com/uploads/product/TSS2410..jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Sweat Shirt</span>
+                        <a href="sproduct.html?id=ss5"> <h5>Texture blue shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=ss6">
+                    <img src="https://uniworthdress.com/uploads/product/TSS2389.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Sweat Shirt</span>
+                        <a href="sproduct.html?id=ss6">  <h5>Texture blue shirt</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=ss7">
+                    <img src="https://uniworthdress.com/uploads/product/TSS2310.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Sweat Shirt</span>
+                        <a href="sproduct.html?id=ss7">  <h5>Texture blue shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=ss8">
+                    <img src="https://uniworthdress.com/uploads/product/5c23de5733ba8e9c529f839463647ac0.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Sweat Shirt</span>
+                        <a href="sproduct.html?id=ss8"> <h5>Texture aqua shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$100</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=pss5">
+                    <img src="https://uniworthdress.com/uploads/product/TSS2317..jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Printed Sweat Shirt</span>
+                        <a href="sproduct.html?id=pss5">  <h5>Baseball Camel shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=pss6">
+                    <img src="https://uniworthdress.com/uploads/product/03719b9061c365968900e97e78cddf22.jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Printed Sweat Shirt</span>
+                        <a href="sproduct.html?id=pss6">  <h5>Explorer black shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=pss7">
+                    <img src="	https://uniworthdress.com/uploads/product/TSS2216..jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Printed Sweat Shirt</span>
+                        <a href="sproduct.html?id=pss7"> <h5>Lupin black shirt</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=pss8">
+                        <img src="https://uniworthdress.com/uploads/product/TSS2209..jpg" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Printed Sweat Shirt</span>
+                        <a href="sproduct.html?id=pss8">  <h5>Rbpr white shirt</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$120</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+            </div>
+            <div class="showmore">
+                <button id="Showprodshirt">Show More</button>
+            </div>
+        </section>
+    </section>
+    <section id="kurtas">
+        <section id="product1">
+            <div class="head-header">  
+                <h2>KURTA'S</h2>
+                <div class="headline"></div>
+            </div>
+            <div class="pro-container">
+                <div class="pro">
+                    <a href="sproduct.html?id=fk1">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/j/j/jjk-sp-a-48110_3_.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Fromal Kurta</span>
+                        <a href="sproduct.html?id=fk1"> <h5>Special black kurta</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$180</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=fk2">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/4/8/48046jjksp_2_.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Fromal Kurta</span>
+                        <a href="sproduct.html?id=fk2">   <h5>Special Green kurta</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$180</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=fk3">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/s/p/sp-48001_1_.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Fromal Kurta</span>
+                        <a href="sproduct.html?id=fk3"> <h5>Special brown kurta</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$180</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=fk4">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/j/j/jjk-sp-a-48030_1_.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Fromal Kurta</span>
+                        <a href="sproduct.html?id=fk4">  <h5>Special golden kurta</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$180</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=sfk1">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/3/3/33035_1__1.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Semi-Formal Kurta</span>
+                        <a href="sproduct.html?id=sfk1">  <h5>Teal blue kurta</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$150</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=sfk2">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/3/2/32984_2_.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Semi-Formal Kurta</span>
+                        <a href="sproduct.html?id=sfk2"> <h5>Printed grey kurta</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$150</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=sfk3">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/3/3/33041_2_.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Semi-Formal Kurta</span>
+                        <a href="sproduct.html?id=sfk3">  <h5>Navy blue kurta</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$150</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=sfk4">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/9/0/90440_2_.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Semi-Formal Kurta</span>
+                        <a href="sproduct.html?id=sfk4"> <h5>Wavy brown kurta</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$150</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div> 
+            </div>
+            <div class="pro-container5">
+                <div class="pro">
+                    <a href="sproduct.html?id=ck1">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/j/j/jjk-47217_1_.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Casual Kurta</span>
+                       <a href="sproduct.html?id=ck1"> <h5>Denim blue kurta</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$130</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=ck2">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/3/3/33074_2__1.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Casual Kurta</span>
+                        <a href="sproduct.html?id=ck2"> <h5>Denim blue kurta</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$130</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=ck3">
+                <img src="https://www.junaidjamshed.com/media/catalog/product/j/j/jjk-32969_1_.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Casual Kurta</span>
+                        <a href="sproduct.html?id=ck3"> <h5>Denim blue kurta</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$130</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=ck4">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/3/3/33037_2_.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Casual Kurta</span>
+                        <a href="sproduct.html?id=ck4"> <h5>Navy blue kurta</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$130</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=fk5">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/4/8/48009jjksp_1_.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Formal Kurta</span>
+                        <a href="sproduct.html?id=fk5"> <h5>Special brown kurta</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$180</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=sfk5">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/3/2/32970-1_1_.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Semi-Formal Kurta</span>
+                        <a href="sproduct.html?id=sfk5"> <h5>Plain white kurta</h5> </a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$150</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=sfk6">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/j/j/jjk-33140_1_.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Semi-Formal Kurta</span>
+                        <a href="sproduct.html?id=sfk6"> <h5>Dark grey kurta</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$150</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+                <div class="pro">
+                    <a href="sproduct.html?id=ck5">
+                    <img src="https://www.junaidjamshed.com/media/catalog/product/j/j/jjk-47232_1_.jpg?width=436&height=560&canvas=436,560&optimize=medium&bg-color=255,255,255&fit=bounds" alt="">
+                    </a>
+                    <div class="des">
+                        <span>Casual Kurta</span>
+                        <a href="sproduct.html?id=ck5"> <h5>Plain black kurta</h5></a>
+                        <div class="star">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>$130</h4>
+                    </div>
+                    <a href=""><i class="bi bi-cart3  cart"></i></a>
+                </div>    
+            </div>
+            <div class="showmore">
+                <button id="Showprodkurta">Show More</button>
+            </div>
+        </section>
+    </section>
+    <!-- <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="bi bi-arrow-right"></i></a>
+    </section> -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up for Newsletter</h4>
+            <p>Get E-mail updates about our latestshop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    <footer >
+        <div class="mainfot">
+            <div class="fotimg">
+                <img src="SE2logo.png" alt="">
+            </div>
+            <div class="col">
+                <h4>Second Fabric</h4>
+                <p><strong>Address:</strong> Humayun Town,Jaranwala Road,Faisalabad</p>
+                <p><strong>Phone:</strong> +923349286205</p>
+                <p><strong>Hours:</strong> 08:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                </div>
+            </div> 
+                
+            <div class="col install">
+                <h4>Install App:</h4>
+                <p>From Store Or Google Play</p>
+                <div class="row">
+                    <img src="googleplay.png" alt="">
+                    <img src="appstoregoogle.png" alt="">
+                </div>            
+            </div>
+
+        </div>
+        
+        <div class="copyright">
+            © 2025 Second Fabric Pakistan,All Right Reserved.
+        </div>
+    </footer>
+
+    <script>
+
+
+
+        const show = document.getElementById("Showprod");
+        const showhoodies = document.querySelector(".pro-container2");
+        const showshirt = document.getElementById("Showprodtees");
+        const showtees = document.querySelector(".pro-container3");
+        const showsweatshirt = document.getElementById("Showprodshirt");
+        const showsweat = document.querySelector(".pro-container4");
+        const showmenkurta = document.getElementById("Showprodkurta");
+        const showkurta = document.querySelector(".pro-container5");
+        const secbox = document.querySelector(".menubox");
+        const header = document.getElementById("header");
+
+
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 240) {
+      header.style.boxShadow = "none";
+      }
+}); 
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 243) {
+    secbox.style.boxShadow = "0 4px 10px rgba(0,0,0,0.6)";
+  } else {
+    secbox.style.boxShadow = "none";
+  }
+}); 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileMenuIcon = document.getElementById("mobile-menu-icon");
+  const navbar = document.getElementById("navbar");
+  const menuIcon = document.getElementById("menu-icon");
+
+  mobileMenuIcon.addEventListener("click", function () {
+    navbar.classList.toggle("active");
+
+    if (navbar.classList.contains("active")) {
+      menuIcon.classList.remove("bi-list");
+      menuIcon.classList.add("bi-x");
+      // Disable scroll
+      document.body.style.overflow = "hidden";
+    } else {
+      menuIcon.classList.remove("bi-x");
+      menuIcon.classList.add("bi-list");
+      // Enable scroll
+      document.body.style.overflow = "auto";
+    }
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuLinks = document.querySelectorAll('.menubox a');
+  const sections = document.querySelectorAll('section');
+  
+  // Highlight first item by default if at top of page
+  if (window.scrollY === 0) {
+    menuLinks[0].classList.add('active');
+  }
+
+  window.addEventListener('scroll', function() {
+    let current = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      
+      if (pageYOffset >= (sectionTop - 100)) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    menuLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(current)) {
+        link.classList.add('active');
+      }
+    });
+  });
+});
+
+show.addEventListener("click", () => {
+         if (showhoodies.style.display === "none" || showhoodies.style.display === "") {
+            showhoodies.style.display = "flex"; 
+            show.textContent = "Show Less";
+        } else {
+            showhoodies.style.display = "none";
+            show.textContent = "Show More"; 
+        }
+        });
+
+        showshirt.addEventListener("click", () => {
+         if (showtees.style.display === "none" || showtees.style.display === "") {
+            showtees.style.display = "flex"; 
+            showshirt.textContent = "Show Less";
+        } else {
+            showtees.style.display = "none";
+            showshirt.textContent = "Show More"; 
+        }
+        });
+
+        showsweatshirt.addEventListener("click", () => {
+         if (showsweat.style.display === "none" || showsweat.style.display === "") {
+            showsweat.style.display = "flex"; 
+            showsweatshirt.textContent = "Show Less";
+        } else {
+            showsweat.style.display = "none";
+            showsweatshirt.textContent = "Show More"; 
+        }
+        });
+
+        showmenkurta.addEventListener("click", () => {
+         if (showkurta.style.display === "none" || showkurta.style.display === "") {
+            showkurta.style.display = "flex"; 
+            showmenkurta.textContent = "Show Less";
+        } else {
+            showkurta.style.display = "none";
+            showmenkurta.textContent = "Show More"; 
+        }
+        });
+
+
+
+
+        const params = new URLSearchParams(window.location.search);
+        const choiceid = params.get("id");
+
+        const choicehoodies=document.getElementById("hoodies");
+        const choicetees=document.getElementById("graphictees");
+        const choicesweatshirts=document.getElementById("sweatshirts");
+        const choicekurtas=document.getElementById("kurtas");
+        const menubox=document.querySelector(".menubox");
+        
+        if(choiceid=="hds")
+        {
+            choicetees.style.display="none";
+            choicesweatshirts.style.display="none";
+            choicekurtas.style.display="none";
+            menubox.style.display="none";
+        }
+        else if(choiceid=="hgt")
+        {
+            choicehoodies.style.display="none";
+            choicesweatshirts.style.display="none";
+            choicekurtas.style.display="none";
+            menubox.style.display="none";
+        }
+       else if(choiceid=="hss")
+        {
+            choicehoodies.style.display="none";
+            choicetees.style.display="none";
+            choicekurtas.style.display="none";
+            menubox.style.display="none";
+        }
+       else if(choiceid=="hkr")
+        {
+            choicehoodies.style.display="none";
+            choicetees.style.display="none";
+            choicesweatshirts.style.display="none";
+            menubox.style.display="none";
+        }
+        else{
+            choicehoodies.style.display="flex";
+            choicetees.style.display="flex";
+            choicesweatshirts.style.display="flex";
+            choicekurtas.style.display="flex";
+        }
+
+
+    
+document.addEventListener("DOMContentLoaded", function () {
+
+const cartIcons = document.querySelectorAll(".bi-cart3");
+
+cartIcons.forEach(icon => {
+    icon.addEventListener("click", function (event) {
+        event.preventDefault(); 
+        
+        const productDiv = this.closest(".pro");
+        const productLink = productDiv.querySelector("a[href*='sproduct.html']");
+        
+        if (!productLink) return;
+        
+ 
+        const url = new URL(productLink.href);
+        const productId = url.searchParams.get("id");
+
+        if (!productId) return; 
+        
+       
+        const productImage = productDiv.querySelector("img").src;
+        const productName = productDiv.querySelector("h5").innerText;
+        const productCategory = productDiv.querySelector("span").innerText;
+        const productPrice = productDiv.querySelector("h4").innerText;
+
+  
+        const defaultSize = "Medium";
+        const defaultQuantity = 1;
+        
+      
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+       
+        const existingProduct = cart.find(item => item.id === productId);
+        
+        if (existingProduct) {
+            existingProduct.quantity += 1; 
+        } else {
+            
+            cart.push({
+                id: productId,
+                name: productName,
+                category: productCategory,
+                price: productPrice,
+                size: defaultSize,
+                quantity: defaultQuantity,
+                image: productImage
+            });
+        }
+
+    
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert("Added to cart successfully!");
+    });
+});
+});
+
+
+    </script>
+</body>
+</html>
